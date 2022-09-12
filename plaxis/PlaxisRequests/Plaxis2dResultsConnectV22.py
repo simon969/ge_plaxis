@@ -65,30 +65,30 @@ class Plaxis2dResultsConnectV22(Plaxis2dResultsConnectV2):
             #echo ResultTypes.EmbeddedBeam
             print ('Getting EmbeddedBeam results ' + phase.Identification.value)
             try:
-                embeamX = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.X, 'node')
-                embeamY = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Y, 'node')
+                embeamX = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.X, 'node')
+                embeamY = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Y, 'node')
                 
-                embeamMat = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.MaterialID, 'node')
-                embeamEl = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.ElementID, 'node')
+                embeamMat = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.MaterialID, 'node')
+                embeamEl = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.ElementID, 'node')
                 
-                embeamUx = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Ux, 'node')
-                embeamUy = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Uy, 'node')
-                embeamUt = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Utot, 'node')
+                embeamUx = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Ux, 'node')
+                embeamUy = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Uy, 'node')
+                embeamUt = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Utot, 'node')
                 
-                embeamPUx = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.PUx, 'node')
-                embeamPUy = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.PUy, 'node')
-                embeamPUt = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.PUtot, 'node')
+                embeamPUx = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.PUx, 'node')
+                embeamPUy = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.PUy, 'node')
+                embeamPUt = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.PUtot, 'node')
                  
-                embeamU1 = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.U1, 'node')
-                embeamU2 = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.U2, 'node')
+                embeamU1 = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.U1, 'node')
+                embeamU2 = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.U2, 'node')
 
-                embeamM2D = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.M2D, 'node')
-                embeamQ2D = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Q2D, 'node')
-                embeamNx2D = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Nx2D, 'node')
-                embeamNz2D = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Nz2D, 'node')
+                embeamM2D = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.M2D, 'node')
+                embeamQ2D = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Q2D, 'node')
+                embeamNx2D = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Nx2D, 'node')
+                embeamNz2D = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Nz2D, 'node')
 
-                embeamTskin = self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Tskin, 'node')
-                embeamTlat= self.g_o.getresults(phase, self.g_o.EmbeddedBeam.Tlat, 'node')
+                embeamTskin = self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Tskin, 'node')
+                embeamTlat= self.g_o.getresults(phase, self.g_o.ResultTypes.EmbeddedBeam.Tlat, 'node')
                      
                 print ('...read EmbeddedBeam results ' + phase.Identification.value)
                 
